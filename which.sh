@@ -1,5 +1,7 @@
 #!/bin/bash
-#use source command or simply . script to run this
+
+echo "use 'source script.sh' or '. script.sh' to run this on ur current bash enviroment"
+
 echo -e "Where do u want to go to? : \c"
 read dir
 if [ "$dir" == "DataStructures" ]; then
