@@ -9,10 +9,9 @@ read dir
     case "$dir" in 
     "DataStructures" | "data*" | "datastructures" | "Da*" | "da*" | "Data*" )
         dirfound=1
-        echo -e "Which lang? \c"
-        read lang
-
         while true; do
+			echo -e "Which lang? \c"
+			read lang
             if [ "$lang" == "C" ]; then
                 cd "/mnt/d/Programming/Data Structures/Data-Structures-and-Algorithms/Data_Structures/CLang"
                 break
@@ -34,10 +33,9 @@ read dir
     case "$dir" in
     "Algorithms" | "algorithms" | "Alg*" | "alg*" )
         dirfound=1
-        echo -e "Which lang? \c"
-        read lang
-
         while true; do
+			echo -e "Which lang? \c"
+			read lang
             if [ "$lang" == "C" ]; then
                 cd "/mnt/d/Programming/Data Structures/Data-Structures-and-Algorithms/Algorithms/CLang"
                 break
