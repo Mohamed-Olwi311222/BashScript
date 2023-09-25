@@ -94,6 +94,28 @@ read dir
 					done
 					;;
 				esac
+				case "$website" in 
+				"HackerRank" | "Hacker*" | "hacker*" | "Hack*" | "hack*" | "Ha*" | "ha*")
+					webfound=1
+					while true; do
+						echo -e "Which lang? \c"
+						read lang
+						if [ "$lang" == "C" ]; then
+							cd "/mnt/d/Programming/ProblemSolving/HackerRank/C_lang"
+							break
+						elif [ "$lang" == "Cpp" ]; then
+							cd "/mnt/d/Programming/ProblemSolving/HackerRank/Cpp"
+							break
+						elif [ "$lang" == "Python" ]; then
+							cd "/mnt/d/Programming/ProblemSolving/HackerRank/Python"
+							break
+						else
+							echo "Lang not found"
+							continue
+						fi
+					done
+					;;
+				esac
 				if [ "$webfound" == 0 ]; then
 					echo "Website not found"
 					continue
